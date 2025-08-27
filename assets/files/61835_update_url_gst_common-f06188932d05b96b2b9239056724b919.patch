@@ -1,0 +1,13 @@
+diff --git a/recipes-multimedia/gstreamer/gstreamer1.0-omx_1.16.3.bbappend b/recipes-multimedia/gstreamer/gstreamer1.0-omx_1.16.3.bbappend
+index ffa5287..a3a44f1 100755
+--- a/recipes-multimedia/gstreamer/gstreamer1.0-omx_1.16.3.bbappend
++++ b/recipes-multimedia/gstreamer/gstreamer1.0-omx_1.16.3.bbappend
+@@ -4,7 +4,7 @@ SRC_URI_remove = "https://gstreamer.freedesktop.org/src/gst-omx/gst-omx-${PV}.ta
+ 
+ SRC_URI_append = " \
+     git://github.com/renesas-rcar/gst-omx.git;branch=RCAR-GEN3e/1.16.3;name=base \
+-    git://anongit.freedesktop.org/gstreamer/common;destsuffix=git/common;name=common \
++    git://gitlab.freedesktop.org/gstreamer/common;destsuffix=git/common;name=common \
+ "
+ 
+ SRC_URI_append_rzg2l = " \
