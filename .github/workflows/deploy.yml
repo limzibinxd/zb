@@ -2,34 +2,35 @@ name: Build and Deploy Docusaurus to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Trigger on push to 'main' branch
+    branches: [ main ]
+
+permissions:
+  contents: write   # allow pushing to gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3  # Fetch the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false  # avoid stale/readonly token
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20  # Use Node.js version 20
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-    - name: Install dependencies
-      run: |
-        cd my-tutorial
-        yarn install  # Install dependencies using yarn
+      - name: Install dependencies
+        working-directory: my-tutorial
+        run: yarn install
 
-    - name: Build the website
-      run: |
-        cd my-tutorial
-        yarn build  # Build the Docusaurus site
+      - name: Build the website
+        working-directory: my-tutorial
+        run: yarn build
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.DOCUSAURUS }}  # Use the default GitHub token
-        publish_dir: my-tutorial/build  # Directory with the built website
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}   # <-- correct token
+          publish_dir: my-tutorial/build
