@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.6.3">
 <title data-rh="true">🅾️9️⃣ MYZR-RZV2H-EK320 Firmware Flashing Manual | Zi Bin</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://limzibinxd.github.io/zb/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://limzibinxd.github.io/zb/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://limzibinxd.github.io/zb/docs/other-tutorial/o1-9"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="🅾️9️⃣ MYZR-RZV2H-EK320 Firmware Flashing Manual | Zi Bin"><meta data-rh="true" name="description" content="Requirement"><meta data-rh="true" property="og:description" content="Requirement"><link data-rh="true" rel="icon" href="/zb/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://limzibinxd.github.io/zb/docs/other-tutorial/o1-9"><link data-rh="true" rel="alternate" href="https://limzibinxd.github.io/zb/docs/other-tutorial/o1-9" hreflang="en"><link data-rh="true" rel="alternate" href="https://limzibinxd.github.io/zb/docs/other-tutorial/o1-9" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zb/blog/rss.xml" title="Zi Bin RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/zb/blog/atom.xml" title="Zi Bin Atom Feed"><link rel="stylesheet" href="/zb/assets/css/styles.76780f4a.css">
-<script src="/zb/assets/js/runtime~main.5bb32c51.js" defer="defer"></script>
+<script src="/zb/assets/js/runtime~main.c69f52e1.js" defer="defer"></script>
 <script src="/zb/assets/js/main.7e9f093e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -43,9 +43,7 @@
 <ul>
 <li>Toggle the power switch to <em><strong>ON</strong></em> to power on the development board.</li>
 </ul>
-<p>.. code-block:: text</p>
-<p>SCI Download mode (Normal SCI boot)
--- Load Program to SRAM ---------------</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     SCI Download mode (Normal SCI boot)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     -- Load Program to SRAM ---------------</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <ul>
 <li>Drag the Flash_Writer_SCIF_MYZR_RZV2H_INTERNAL_MEMORY.mot file directly into the window.</li>
 </ul>
@@ -67,11 +65,7 @@
 <ul>
 <li>Enter the following content in the terminal:</li>
 </ul>
-<p>.. code-block:: text</p>
-<p>em_w
-1
-1
-8101e00</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     em_w</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     8101e00</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/zb/assets/images/o9-7-e3becb3a4d6323f5ba1dae937c102d25.png" width="739" height="582" class="img_ev3q"></p>
 <ul>
 <li>Drag the bl2_bp_emmc-myzr-rzv2h-bb320-revb-8g.srec file directly into the window and wait for the transmission to complete.</li>
@@ -80,13 +74,9 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="c-executing-firmware-components">c) Executing firmware components<a href="#c-executing-firmware-components" class="hash-link" aria-label="Direct link to c) Executing firmware components" title="Direct link to c) Executing firmware components">​</a></h3>
 <p><strong>flp (Firmware Image Package)</strong></p>
 <ul>
-<li>Enter the following content in the Tera Term software:</li>
+<li>Enter the following content in the terminal:</li>
 </ul>
-<p>.. code-block:: text</p>
-<p>em_w
-1
-300
-44000000</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     em_w</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     300</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     44000000</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/zb/assets/images/o9-10-60981fac1bf0a5f83937163e3ff42b19.png" width="739" height="398" class="img_ev3q"></p>
 <ul>
 <li>Drag the fip-myzr-rzv2h-bb320-revb-8g.srec file directly into the window and wait for the transmission to complete.</li>
@@ -111,56 +101,35 @@
 </li>
 <li>
 <p>When you see the countdown appear, press <code>Enter</code> key to enter U-BOOT.</p>
-<p>.. code-block:: shell</p>
-<p>NOTICE:  BL2: v2.7(release):3ff5203
-NOTICE:  BL2: Built : 12:10:31, May 24 2025
-NOTICE:  BL2: Booting BL31
-NOTICE:  BL31: v2.7(release):3ff5203
-NOTICE:  BL31: Built : 12:10:31, May 24 2025</p>
-<p>U-Boot 2021.10 (May 26 2025 - 08:03:39 +0000)</p>
-<p>CPU:   Renesas Electronics CPU rev 1.0
-Model: MYZR RZV2H LGA320 Evaluation Kit - 8GB Memory
-DRAM:  7.9 GiB
-MMC:   mmc@15c00000: 0, mmc@15c10000: 1
-Loading Environment from MMC... *** Warning - bad CRC, using default environment</p>
-<p>In:    serial@11c01400
-Out:   serial@11c01400
-Err:   serial@11c01400
-Net:   eth0: ethernet@15c30000
-Hit any key to stop autoboot:  0
-=&gt;</p>
 </li>
-<li>
-<p>Clear the old environment variables to avoid unnecessary errors.</p>
-<p>.. code-block:: text</p>
-<p>env default -a; saveenv</p>
-</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     NOTICE:  BL2: v2.7(release):3ff5203</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     NOTICE:  BL2: Built : 12:10:31, May 24 2025</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     NOTICE:  BL2: Booting BL31</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     NOTICE:  BL31: v2.7(release):3ff5203</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     NOTICE:  BL31: Built : 12:10:31, May 24 2025</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     U-Boot 2021.10 (May 26 2025 - 08:03:39 +0000)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     CPU:   Renesas Electronics CPU rev 1.0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Model: MYZR RZV2H LGA320 Evaluation Kit - 8GB Memory</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     DRAM:  7.9 GiB</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     MMC:   mmc@15c00000: 0, mmc@15c10000: 1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Loading Environment from MMC... *** Warning - bad CRC, using default environment</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     In:    serial@11c01400</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Out:   serial@11c01400</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Err:   serial@11c01400</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Net:   eth0: ethernet@15c30000</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     Hit any key to stop autoboot:  0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     =&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>Clear the old environment variables to avoid unnecessary errors.</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     env default -a; saveenv</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
 <li>
 <p>Restart the development board by pressing <code>Reset</code> button.</p>
 </li>
 <li>
 <p>Start the flashing system from the USB drive.</p>
-<p>.. code-block:: text</p>
-<p>run bootcmd_usb</p>
 </li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     run bootcmd_usb</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
 <li>
 <p>Wait for the flashing to complete.</p>
 </li>
 <li>
 <p>After the flashing is completed, the system will restart automatically and start up.</p>
-<p>.. code-block:: text</p>
-<p>Poky (Yocto Project Reference Distro) 3.1.31 myzr-rzv2h-ek320 ttySC0</p>
-<p>BOARD: MYZR RZV2H LGA320 Evaluation Kit
-LSI: RZ/V2H
-AI SDK V5.00 (Source Code)
-myzr-rzv2h-ek320 login:</p>
-</li>
-<li>
-<p>Enter root to log in.</p>
-<p>.. code-block:: text</p>
-<p>root</p>
 </li>
 </ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     Poky (Yocto Project Reference Distro) 3.1.31 myzr-rzv2h-ek320 ttySC0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     BOARD: MYZR RZV2H LGA320 Evaluation Kit</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     LSI: RZ/V2H</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     AI SDK V5.00 (Source Code)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     myzr-rzv2h-ek320 login:</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>Enter root to log in.</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">     root</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/zb/assets/images/o9-13-b2e9ff6e4c2e9c7dfa91e1fa4fcc6391.png" width="728" height="194" class="img_ev3q"></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/other-tutorial/o1-9.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/zb/docs/other-tutorial/o1-8"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">🅾️8️⃣ Launch YOLO Detection Models in Raspberry Pi CM5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#requirement" class="table-of-contents__link toc-highlight">Requirement</a></li><li><a href="#step-1-connect-the-development-board" class="table-of-contents__link toc-highlight">Step 1: Connect the Development Board</a></li><li><a href="#step-2-flash-the-boot" class="table-of-contents__link toc-highlight">Step 2: Flash the Boot</a><ul><li><a href="#a-erase-memory-on-emmc" class="table-of-contents__link toc-highlight">a) Erase memory on eMMC</a></li><li><a href="#b-initiate-the-boot-process" class="table-of-contents__link toc-highlight">b) Initiate the boot process</a></li><li><a href="#c-executing-firmware-components" class="table-of-contents__link toc-highlight">c) Executing firmware components</a></li></ul></li><li><a href="#step-3-start-the-boot" class="table-of-contents__link toc-highlight">Step 3: Start the BOOT</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zb/docs/intro">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Social Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.instagram.com/zibin_lim/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Instagram<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.facebook.com/zibin.lim.1/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Facebook<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
