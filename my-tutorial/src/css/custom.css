@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #ffb8e0;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+[data-theme='light'] .DocSearch {
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+}
+
+[data-theme='dark'] .DocSearch {
+  --docsearch-modal-background: var(--ifm-background-color);
+}
