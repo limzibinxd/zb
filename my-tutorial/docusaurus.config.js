@@ -41,7 +41,7 @@ const config = {
       tagName: 'meta',
       attributes: {
         name: 'algolia-site-verification',
-        content: '92159DF2EC20A54C', // The value from your screenshot
+        content: '28419692458DD0E3', // The value from your screenshot
       },
     },
   ],
@@ -157,7 +157,7 @@ const config = {
       algolia: {
         // Search only API key
         apiKey: "5e2d1490bc96c8827dd54422c099f934",
-        indexName: "limzibinxd-docu",
+        indexName: "limzibinxd.github.io_U52ZR1LR92",
         appId: "U52ZR1LR92",
         contextualSearch: false,
         debug: false,
