@@ -85,6 +85,7 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+
       navbar: {
         title: 'Home',
         logo: {
@@ -106,6 +107,7 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
@@ -151,6 +153,17 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
+
+      algolia: {
+        // Search only API key
+        apiKey: "5e2d1490bc96c8827dd54422c099f934",
+        indexName: "limzibinxd-docu",
+        appId: "U52ZR1LR92",
+        contextualSearch: false,
+        debug: false,
+        searchPagePath: 'search',
+      },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
