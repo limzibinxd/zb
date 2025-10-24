@@ -36,6 +36,16 @@ const config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '92159DF2EC20A54C', // The value from your screenshot
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
