@@ -156,10 +156,10 @@ const config = {
 
       algolia: {
         // Search only API key
-        apiKey: "5e2d1490bc96c8827dd54422c099f934",
-        indexName: "limzibinxd.github.io_U52ZR1LR92",
-        appId: "U52ZR1LR92",
-        contextualSearch: false,
+        apiKey: "a74e4404df2814c0bf8669188e3f8a73",
+        indexName: "zb-docs",
+        appId: "5ISSSUJEJ2",
+        contextualSearch: true,
         debug: false,
         searchPagePath: 'search',
       },
